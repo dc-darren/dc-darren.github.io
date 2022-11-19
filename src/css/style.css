@@ -559,48 +559,95 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
-.bg-blue-50 {
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.bg-dc-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
+}
+
+.bg-dc-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
 .p-4 {
   padding: 1rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.btn-desktop,
+.btn-tablet,
+.btn-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.font-bold {
-  font-weight: 700;
+.btn-desktop {
+  width: 180px;
+  height: 60px;
 }
 
-.text-dc-red {
+.btn-tablet {
+  width: 160px;
+  height: 48px;
+}
+
+.btn-mobile {
+  width: 140px;
+  height: 48px;
+}
+
+.btn-dc-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 58 58 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity));
+}
+
+.btn-dc-red-outline {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(216 58 58 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(216 58 58 / var(--tw-text-opacity));
 }
 
-.text-blue-500 {
+.btn-dc-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(216 58 58 / var(--tw-text-opacity));
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-dc-white-outline {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(254 254 254 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity));
 }
