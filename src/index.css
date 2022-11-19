@@ -1,28 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Manrope', 'Inter', sans-serif;
+}
+
+.container-dc {
+  @apply
+  max-w-screen-2xl
+  mx-auto;
+}
+
 .btn-desktop,
 .btn-tablet,
 .btn-mobile {
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5000px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .btn-desktop {
-  width: 180px;
+  min-width: 180px;
   height: 60px;
 }
 
+nav .btn-desktop {
+  min-width: 150px;
+  height: 50px;
+}
+
 .btn-tablet {
-  width: 160px;
+  min-width: 160px;
   height: 48px;
 }
 
+nav .btn-tablet {
+  min-width: 120px;
+  height: 40px;
+}
+
 .btn-mobile {
-  width: 140px;
+  min-width: 140px;
   height: 48px;
+}
+
+nav .btn-mobile {
+  min-width: 100px;
+  height: 40px;
 }
 
 .btn-dc-red {
