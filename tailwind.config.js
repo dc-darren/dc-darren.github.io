@@ -14,6 +14,11 @@ module.exports = {
           'white': '#FEFEFE',
         },
       },
+      spacing: {
+        '15': '60px',
+        '25': '100px',
+        '30': '120px',
+      }
     },
   },
   plugins: [],
