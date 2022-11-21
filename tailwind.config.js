@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/**/*.{html,js,jsx,ts,tsx}",
@@ -13,6 +16,10 @@ module.exports = {
           'light-gray': '#E1E5EA',
           'white': '#FEFEFE',
         },
+      },
+      fontFamily: {
+        'inter': ['Inter', 'Manrope', defaultTheme.fontFamily.sans],
+        'manrope': ['Manrope', 'Inter', defaultTheme.fontFamily.sans],
       },
       spacing: {
         '15': '60px',

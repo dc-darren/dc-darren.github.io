@@ -4,7 +4,7 @@ function App() {
       {/* Navbar */}
       <header className="bg-dc-white">
         <nav className="container-dc flex justify-between items-center text-dc-red px-20 py-5">
-          <a href="/" className="font-bold text-xl">dc-darren</a>
+          <h1><a href="/" className="font-bold text-xl">dc-darren</a></h1>
           <ul className="flex items-center gap-10">
             <li><a href="#about" className="font-semibold">About</a></li>
             <li><a href="#portfolio" className="font-semibold">Portfolio</a></li>
@@ -13,19 +13,30 @@ function App() {
         </nav>
       </header>
       {/* End of Navbar */}
-      <div className="min-h-screen bg-dc-white flex p-4">
-        <div className="h-fit flex flex-col gap-4 bg-dc-black p-4">
-          <button className="btn-desktop btn-dc-red">Button Red</button>
-          <button className="btn-desktop btn-dc-red-outline">Button Red Outline</button>
-          <button className="btn-desktop btn-dc-white">Button White</button>
-          <button className="btn-desktop btn-dc-white-outline">Button White Outline</button>
-        </div>
-        <div className="h-fit flex flex-col gap-4 bg-dc-black p-4 ml-4">
-          <button className="btn-desktop btn-dc-red">Button Desktop</button>
-          <button className="btn-tablet btn-dc-red">Button Tablet</button>
-          <button className="btn-mobile btn-dc-red">Button Mobile</button>
-        </div>
-      </div>
+
+      {/* Body */}
+      <main>
+        {/* Hero */}
+        <section className="bg-dc-light-gray">
+          <div className="container-dc flex justify-between items-center gap-10 p-30">
+            <div className="flex flex-col gap-3">
+              <h2 className="subheader-dc text-xl text-dc-red">FULL-STACK DEVELOPER</h2>
+              <h3 className="header-dc text-6xl">Hi! I am Darren!</h3>
+              <p className="flex-shrink-0 basis-1/2 text-xl text-dc-gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                A ornare tincidunt egestas adipiscing. Sed lacus aliquam sit amet sem.
+                Lacus ut ultricies nam enim. Ac aenean ut amet augue.
+                Nibh facilisi proin cursus porta tempor, non. Diam.
+              </p>
+              <a href="#getInTouch" className="btn-desktop btn-dc-red mt-2">Get in Touch</a>
+            </div>
+            <img src="assets/images/sample-image.png" alt="Avatar" className="flex-shrink-0 basis-1/2 aspect-[15/11]" />
+          </div>
+        </section>
+        {/* End of Hero */}
+      </main>
+      {/* End of Body */}
+
       {/* Footer */}
       <footer className="bg-dc-black">
         <div className="container-dc grid grid-cols-3 text-xl text-dc-white px-30 py-25">
@@ -60,7 +71,6 @@ function App() {
           </div>
         </div>
       </footer>
-      {/* End of Navbar */}
       {/* End of Footer */}
     </>
   );
