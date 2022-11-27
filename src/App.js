@@ -16,12 +16,12 @@ function App() {
 
       {/* Body */}
       <main>
-        {/* Hero */}
-        <section className="bg-dc-light-gray">
-          <div className="dc-container dc-grid items-center gap-10 p-30">
+        {/* About */}
+        <section id="about" className="bg-dc-light-gray">
+          <div className="dc-container dc-grid items-center gap-10 px-30 py-25">
             <div className="col-span-5 flex flex-col gap-3">
-              <h2 className="dc-subheader text-xl text-dc-red">FULL-STACK DEVELOPER</h2>
-              <h3 className="dc-header text-6xl">Hi! I am Darren!</h3>
+              <p className="dc-subheader text-xl text-dc-red">Full-Stack Developer</p>
+              <h2 className="dc-header text-6xl">Hi! I am Darren!</h2>
               <p className="flex-shrink-0 basis-1/2 text-xl text-dc-gray">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 A ornare tincidunt egestas adipiscing. Sed lacus aliquam sit amet sem.
@@ -33,7 +33,17 @@ function App() {
             <img src="assets/images/sample-image.png" alt="Avatar" className="col-start-7 col-span-6 w-full aspect-[15/11]" />
           </div>
         </section>
-        {/* End of Hero */}
+        {/* End of About */}
+
+        {/* Portfolio Header */}
+        <section id="portfolio" className="bg-dc-white">
+          <div className="dc-container flex flex-col justify-between items-center py-25">
+            <p className="dc-subheader text-xl text-dc-red">This is a subheader</p>
+            <h2 className="dc-header text-4xl">This is a header</h2>
+            <div className="dc-separator"></div>
+          </div>
+        </section>
+        {/* End of Portfolio Header */}
       </main>
       {/* End of Body */}
 

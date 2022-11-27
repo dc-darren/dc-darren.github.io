@@ -39,7 +39,16 @@
   .dc-subheader {
     @apply
     font-medium
+    uppercase
     tracking-[0.2em];
+  }
+
+  .dc-separator {
+    @apply
+    w-[50px]
+    border-b
+    border-b-dc-black
+    mt-2;
   }
   
   .btn-desktop,

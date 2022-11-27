@@ -581,7 +581,16 @@ body {
 
 .dc-subheader {
   font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.dc-separator {
+  margin-top: 0.5rem;
+  width: 50px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(30 30 30 / var(--tw-border-opacity));
 }
 
 .btn-desktop,
@@ -645,20 +654,12 @@ nav .btn-desktop {
   color: rgb(216 58 58 / var(--tw-text-opacity));
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
 
 .col-span-6 {
   grid-column: span 6 / span 6;
-}
-
-.col-start-6 {
-  grid-column-start: 6;
 }
 
 .col-start-7 {
@@ -685,12 +686,12 @@ nav .btn-desktop {
   aspect-ratio: 15/11;
 }
 
-.w-15 {
-  width: 60px;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-15 {
+  width: 60px;
 }
 
 .flex-shrink-0 {
@@ -761,10 +762,6 @@ nav .btn-desktop {
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
-.p-30 {
-  padding: 120px;
-}
-
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -778,6 +775,11 @@ nav .btn-desktop {
 .px-30 {
   padding-left: 120px;
   padding-right: 120px;
+}
+
+.py-30 {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .py-25 {
