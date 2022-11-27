@@ -3,7 +3,7 @@ function App() {
     <>
       {/* Navbar */}
       <header className="bg-dc-white">
-        <nav className="container-dc flex justify-between items-center text-dc-red px-20 py-5">
+        <nav className="dc-container flex justify-between items-center text-dc-red px-20 py-5">
           <h1><a href="/" className="font-bold text-xl">dc-darren</a></h1>
           <ul className="flex items-center gap-10">
             <li><a href="#about" className="font-semibold">About</a></li>
@@ -18,10 +18,10 @@ function App() {
       <main>
         {/* Hero */}
         <section className="bg-dc-light-gray">
-          <div className="container-dc flex justify-between items-center gap-10 p-30">
-            <div className="flex flex-col gap-3">
-              <h2 className="subheader-dc text-xl text-dc-red">FULL-STACK DEVELOPER</h2>
-              <h3 className="header-dc text-6xl">Hi! I am Darren!</h3>
+          <div className="dc-container dc-grid items-center gap-10 p-30">
+            <div className="col-span-5 flex flex-col gap-3">
+              <h2 className="dc-subheader text-xl text-dc-red">FULL-STACK DEVELOPER</h2>
+              <h3 className="dc-header text-6xl">Hi! I am Darren!</h3>
               <p className="flex-shrink-0 basis-1/2 text-xl text-dc-gray">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 A ornare tincidunt egestas adipiscing. Sed lacus aliquam sit amet sem.
@@ -30,7 +30,7 @@ function App() {
               </p>
               <a href="#getInTouch" className="btn-desktop btn-dc-red mt-2">Get in Touch</a>
             </div>
-            <img src="assets/images/sample-image.png" alt="Avatar" className="flex-shrink-0 basis-1/2 aspect-[15/11]" />
+            <img src="assets/images/sample-image.png" alt="Avatar" className="col-start-7 col-span-6 w-full aspect-[15/11]" />
           </div>
         </section>
         {/* End of Hero */}
@@ -39,7 +39,7 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-dc-black">
-        <div className="container-dc grid grid-cols-3 text-xl text-dc-white px-30 py-25">
+        <div className="dc-container grid grid-cols-3 text-xl text-dc-white px-30 py-25">
           <div>
             <a href="/" className="font-bold text-4xl">dc-darren</a>
             <p className="text-zinc-300 mt-7">Made with ❤️</p>

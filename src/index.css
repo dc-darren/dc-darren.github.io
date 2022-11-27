@@ -9,13 +9,19 @@
 }
 
 @layer components {
-  .container-dc {
+  .dc-container {
     @apply
     max-w-screen-2xl
     mx-auto;
   }
-  
-  .transition-dc {
+
+  .dc-grid {
+    @apply
+    grid
+    grid-cols-12;
+  }
+
+  .dc-transition {
     @apply
     transition-all
     duration-500
@@ -24,16 +30,16 @@
     hover:shadow-dc-black;
   }
 
-  .subheader-dc {
-    @apply
-    font-medium
-    tracking-[0.2em];
-  }
-
-  .header-dc {
+  .dc-header {
     @apply
     font-inter
     font-extrabold;
+  }
+
+  .dc-subheader {
+    @apply
+    font-medium
+    tracking-[0.2em];
   }
   
   .btn-desktop,
@@ -47,7 +53,7 @@
     font-semibold
     rounded-full
     px-5
-    transition-dc;
+    dc-transition;
   }
 
   .btn-desktop {
