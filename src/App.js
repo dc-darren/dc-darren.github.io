@@ -45,8 +45,9 @@ function App() {
         </section>
         {/* End of Portfolio Header */}
 
-        
         {/* Portfolio */}
+
+        {/* Portfolio Image Left */}
         <section id="portfolio-1" className="bg-dc-gray">
           <div className="dc-container dc-grid items-center gap-10 px-30">
             {/* Image width 50% of screen = (col 1-7) + gap */}
@@ -64,6 +65,8 @@ function App() {
             </div>
           </div>
         </section>
+        {/* End of Portfolio Image Left */}
+
         {/* End of Portfolio */}
       </main>
       {/* End of Body */}
