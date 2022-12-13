@@ -698,6 +698,10 @@ nav .btn-desktop {
   margin-top: 1.75rem;
 }
 
+.-mr-30 {
+  margin-right: -120px;
+}
+
 .flex {
   display: flex;
 }
@@ -718,8 +722,8 @@ nav .btn-desktop {
   width: 60px;
 }
 
-.min-w-\[calc\(100\%__\+_2\.5rem\+_120px\)\] {
-  min-width: calc(100%  + 2.5rem +  120px);
+.min-w-\[calc\(100\%__\+_\(2\.5rem\/2\)\+_120px\)\] {
+  min-width: calc(100%  + (2.5rem / 2) +  120px);
 }
 
 .flex-shrink-0 {
@@ -728,6 +732,10 @@ nav .btn-desktop {
 
 .basis-1\/2 {
   flex-basis: 50%;
+}
+
+.grid-flow-dense {
+  grid-auto-flow: dense;
 }
 
 .grid-cols-3 {
@@ -746,8 +754,16 @@ nav .btn-desktop {
   flex-wrap: wrap;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-between {
@@ -773,10 +789,6 @@ nav .btn-desktop {
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.justify-self-center {
-  justify-self: center;
 }
 
 .bg-dc-white {
@@ -821,6 +833,10 @@ nav .btn-desktop {
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-xl {
@@ -879,4 +895,8 @@ nav .btn-desktop {
 .text-zinc-300 {
   --tw-text-opacity: 1;
   color: rgb(212 212 216 / var(--tw-text-opacity));
+}
+
+.direction-rtl {
+  direction: rtl;
 }

@@ -50,9 +50,9 @@ function App() {
         {/* Portfolio Image Left */}
         <section id="portfolio-1" className="bg-dc-gray">
           <div className="dc-container dc-grid items-center gap-10 px-30">
-            {/* Image width 50% of screen = (col 1-7) + gap */}
+            {/* Image width 50% of screen = (col 1 till col 7) + (gap/2) */}
             {/* With grid applied, image width is also added with margin which is 120px */}
-            <img src="assets/images/sample-image.png" alt="Avatar" className="col-start-1 col-end-7 justify-self-center min-w-[calc(100%__+_2.5rem+_120px)] -ml-30" />
+            <img src="assets/images/sample-image.png" alt="Avatar" className="col-start-1 col-end-7 min-w-[calc(100%__+_(2.5rem/2)+_120px)] -ml-30" />
             <div className="col-start-8 col-span-5 flex flex-col gap-3 text-dc-white">
               <p className="dc-subheader text-lg">This is a Header</p>
               <h2 className="dc-header text-5xl">This is also a header</h2>
@@ -66,6 +66,27 @@ function App() {
           </div>
         </section>
         {/* End of Portfolio Image Left */}
+
+        {/* Portfolio Image Right */}
+        <section id="portfolio-2" className="bg-dc-gray">
+          {/* Grid reversed for image right */}
+          <div className="dc-container dc-grid direction-rtl justify-end items-center gap-10 px-30">
+            {/* Image width 50% of screen = (col 1 till col 7) + (gap/2) */}
+            {/* With grid applied, image width is also added with margin which is 120px */}
+            <img src="assets/images/sample-image.png" alt="Avatar" className="col-start-1 col-end-7 min-w-[calc(100%__+_(2.5rem/2)+_120px)] -mr-30" />
+            <div className="col-start-8 col-span-5 flex flex-col items-end gap-3 text-left text-dc-white">
+              <p className="dc-subheader text-lg">This is a Header</p>
+              <h2 className="dc-header text-5xl">This is also a header</h2>
+              <p className="flex-shrink-0 basis-1/2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut maecenas ultricies eget viverra aliquam eget nec metus, id.
+                Eget sagittis fames blandit lorem mattis.
+              </p>
+              <a href="#portfolio-2" className="btn-desktop btn-dc-white-outline mt-2">Button</a>
+            </div>
+          </div>
+        </section>
+        {/* End of Portfolio Image Right */}
 
         {/* End of Portfolio */}
       </main>

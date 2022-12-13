@@ -121,3 +121,13 @@
     text-dc-white;
   }
 }
+
+@layer utilities {
+  .direction-ltr {
+    direction: ltr;
+  }
+
+  .direction-rtl {
+    direction: rtl;
+  }
+}
