@@ -88,6 +88,67 @@ function App() {
         </section>
         {/* End of Portfolio Image Right */}
 
+        {/* More Portfolio */}
+        <section id="more-portfolio" className="bg-dc-light-gray">
+          <div className="dc-container px-30 py-25">
+            <div className="dc-container flex flex-col justify-between items-center py-25">
+              <p className="dc-subheader text-xl text-dc-red">This is a subheader</p>
+              <h2 className="dc-header text-4xl">This is a header</h2>
+            </div>
+            <div className="dc-grid gap-10">
+              {/* More Portfolio Item */}
+              <a href="#portfolio-3" className="block col-span-4">
+                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
+                <div className="flex flex-col gap-y-1 py-3">
+                  <h3 className="font-medium text-3xl">This is a title</h3>
+                  <p className="text-dc-gray">This is a subtitle</p>
+                </div>
+              </a>
+              {/* More Portfolio Item */}
+              <a href="#portfolio-4" className="block col-span-4">
+                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
+                <div className="flex flex-col gap-y-1 py-3">
+                  <h3 className="font-medium text-3xl">This is a title</h3>
+                  <p className="text-dc-gray">This is a subtitle</p>
+                </div>
+              </a>
+              {/* More Portfolio Item */}
+              <a href="#portfolio-5" className="block col-span-4">
+                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
+                <div className="flex flex-col gap-y-1 py-3">
+                  <h3 className="font-medium text-3xl">This is a title</h3>
+                  <p className="text-dc-gray">This is a subtitle</p>
+                </div>
+              </a>
+              {/* More Portfolio Item */}
+              <a href="#portfolio-6" className="block col-span-4">
+                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
+                <div className="flex flex-col gap-y-1 py-3">
+                  <h3 className="font-medium text-3xl">This is a title</h3>
+                  <p className="text-dc-gray">This is a subtitle</p>
+                </div>
+              </a>
+              {/* More Portfolio Item */}
+              <a href="#portfolio-7" className="block col-span-4">
+                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
+                <div className="flex flex-col gap-y-1 py-3">
+                  <h3 className="font-medium text-3xl">This is a title</h3>
+                  <p className="text-dc-gray">This is a subtitle</p>
+                </div>
+              </a>
+              {/* More Portfolio Item */}
+              <a href="#portfolio-8" className="block col-span-4">
+                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
+                <div className="flex flex-col gap-y-1 py-3">
+                  <h3 className="font-medium text-3xl">This is a title</h3>
+                  <p className="text-dc-gray">This is a subtitle</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        {/* End of More Portfolio */}
+
         {/* End of Portfolio */}
       </main>
       {/* End of Body */}
