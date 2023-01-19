@@ -54,7 +54,7 @@ function App() {
             {/* With grid applied, image width is also added with margin which is 120px */}
             <img src="assets/images/sample-image.png" alt="Avatar" className="col-start-1 col-end-7 min-w-[calc(100%__+_(2.5rem/2)+_120px)] -ml-30" />
             <div className="col-start-8 col-span-5 flex flex-col gap-3 text-dc-white">
-              <p className="dc-subheader text-lg">This is a Header</p>
+              <p className="dc-subheader text-lg">This is a header</p>
               <h2 className="dc-header text-5xl">This is also a header</h2>
               <p className="flex-shrink-0 basis-1/2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -75,7 +75,7 @@ function App() {
             {/* With grid applied, image width is also added with margin which is 120px */}
             <img src="assets/images/sample-image.png" alt="Avatar" className="col-start-1 col-end-7 min-w-[calc(100%__+_(2.5rem/2)+_120px)] -mr-30" />
             <div className="col-start-8 col-span-5 flex flex-col items-end gap-3 text-left text-dc-white">
-              <p className="dc-subheader text-lg">This is a Header</p>
+              <p className="dc-subheader text-lg">This is a header</p>
               <h2 className="dc-header text-5xl">This is also a header</h2>
               <p className="flex-shrink-0 basis-1/2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -150,6 +150,31 @@ function App() {
         {/* End of More Portfolio */}
 
         {/* End of Portfolio */}
+
+        {/* Emphasis */}
+        <section id="emphasis" className="bg-dc-red text-dc-white">
+          <div className="dc-container dc-grid items-center gap-10 px-30 py-25">
+            <div className="relative col-span-6">
+                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[15/11]" />
+                <div className="absolute w-full h-full flex flex-col justify-center items-center font-inter text-dc-black top-0 left-0">
+                    <p className="font-extrabold text-9xl">01</p>
+                    <p className="font-extrabold text-7xl mt-8">A text here</p>
+                </div>
+            </div>
+            <div className="col-start-8 col-span-5 flex flex-col gap-3">
+              <p className="dc-subheader text-xl">This is a subheader</p>
+              <h2 className="dc-header text-6xl">This is a header</h2>
+              <p className="flex-shrink-0 basis-1/2 text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                A ornare tincidunt egestas adipiscing. Sed lacus aliquam sit amet sem.
+                Lacus ut ultricies nam enim. Ac aenean ut amet augue.
+                Nibh facilisi proin cursus porta tempor, non. Diam.
+              </p>
+              <a href="#getInTouch" className="btn-desktop btn-dc-white mt-2">Button</a>
+            </div>
+          </div>
+        </section>
+        {/* End of Emphasis */}
       </main>
       {/* End of Body */}
 

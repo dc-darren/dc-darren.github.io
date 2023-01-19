@@ -654,12 +654,35 @@ nav .btn-desktop {
   color: rgb(216 58 58 / var(--tw-text-opacity));
 }
 
+.btn-dc-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(216 58 58 / var(--tw-text-opacity));
+}
+
 .btn-dc-white-outline {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(254 254 254 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(254 254 254 / var(--tw-text-opacity));
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .col-span-5 {
@@ -706,6 +729,18 @@ nav .btn-desktop {
   margin-top: 1.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -724,6 +759,10 @@ nav .btn-desktop {
 
 .aspect-\[3\/2\] {
   aspect-ratio: 3/2;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -772,6 +811,10 @@ nav .btn-desktop {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -823,6 +866,11 @@ nav .btn-desktop {
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
+.bg-dc-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 58 58 / var(--tw-bg-opacity));
+}
+
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -856,6 +904,10 @@ nav .btn-desktop {
   text-align: left;
 }
 
+.font-inter {
+  font-family: Inter, Manrope, ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -881,14 +933,24 @@ nav .btn-desktop {
   line-height: 1;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -901,6 +963,10 @@ nav .btn-desktop {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-dc-red {
@@ -921,6 +987,11 @@ nav .btn-desktop {
 .text-zinc-300 {
   --tw-text-opacity: 1;
   color: rgb(212 212 216 / var(--tw-text-opacity));
+}
+
+.text-dc-black {
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
 }
 
 .direction-rtl {
