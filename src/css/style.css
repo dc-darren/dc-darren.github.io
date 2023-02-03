@@ -646,12 +646,26 @@ nav .btn-desktop {
   color: rgb(254 254 254 / var(--tw-text-opacity));
 }
 
+.btn-dc-red:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(216 58 58 / var(--tw-text-opacity));
+}
+
 .btn-dc-red-outline {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(216 58 58 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(216 58 58 / var(--tw-text-opacity));
+}
+
+.btn-dc-red-outline:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 58 58 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity));
 }
 
 .btn-dc-white {
@@ -661,12 +675,26 @@ nav .btn-desktop {
   color: rgb(216 58 58 / var(--tw-text-opacity));
 }
 
+.btn-dc-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 58 58 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity));
+}
+
 .btn-dc-white-outline {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(254 254 254 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(254 254 254 / var(--tw-text-opacity));
+}
+
+.btn-dc-white-outline:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
 }
 
 .absolute {
@@ -725,20 +753,12 @@ nav .btn-desktop {
   margin-right: -120px;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .block {
@@ -856,9 +876,19 @@ nav .btn-desktop {
   background-color: rgb(225 229 234 / var(--tw-bg-opacity));
 }
 
-.bg-dc-gray {
+.bg-\[\#7A6657\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(119 119 119 / var(--tw-bg-opacity));
+  background-color: rgb(122 102 87 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#113448\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 52 72 / var(--tw-bg-opacity));
+}
+
+.bg-dc-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 58 58 / var(--tw-bg-opacity));
 }
 
 .bg-dc-black {
@@ -866,9 +896,8 @@ nav .btn-desktop {
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
-.bg-dc-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 58 58 / var(--tw-bg-opacity));
+.object-left {
+  object-position: left;
 }
 
 .px-20 {
@@ -938,11 +967,6 @@ nav .btn-desktop {
   line-height: 2.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
@@ -951,6 +975,11 @@ nav .btn-desktop {
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -984,16 +1013,38 @@ nav .btn-desktop {
   color: rgb(254 254 254 / var(--tw-text-opacity));
 }
 
-.text-zinc-300 {
-  --tw-text-opacity: 1;
-  color: rgb(212 212 216 / var(--tw-text-opacity));
-}
-
 .text-dc-black {
   --tw-text-opacity: 1;
   color: rgb(30 30 30 / var(--tw-text-opacity));
 }
 
+.text-zinc-300 {
+  --tw-text-opacity: 1;
+  color: rgb(212 212 216 / var(--tw-text-opacity));
+}
+
+.direction-ltr {
+  direction: ltr;
+}
+
 .direction-rtl {
   direction: rtl;
+}
+
+.hover\:text-\[\]:hover {
+  color: ;
+}
+
+.hover\:text-\[\#113448\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 52 72 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[7A6657\]:hover {
+  color: 7A6657;
+}
+
+.hover\:text-\[\#7A6657\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(122 102 87 / var(--tw-text-opacity));
 }

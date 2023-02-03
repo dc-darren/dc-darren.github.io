@@ -98,27 +98,35 @@
   .btn-dc-red {
     @apply
     bg-dc-red
-    text-dc-white;
+    text-dc-white
+    hover:bg-dc-white
+    hover:text-dc-red;
   }
   
   .btn-dc-red-outline {
     @apply
     border
     border-dc-red
-    text-dc-red;
+    text-dc-red
+    hover:bg-dc-red
+    hover:text-dc-white;
   }
   
   .btn-dc-white {
     @apply
     bg-dc-white
-    text-dc-red;
+    text-dc-red
+    hover:bg-dc-red
+    hover:text-dc-white;
   }
   
   .btn-dc-white-outline {
     @apply
     border
     border-dc-white
-    text-dc-white;
+    text-dc-white
+    hover:bg-dc-white
+    hover:text-dc-black;
   }
 }
 
