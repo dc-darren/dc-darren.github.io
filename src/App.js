@@ -95,7 +95,7 @@ function App() {
             </div>
             <div className="dc-grid gap-4 sm:gap-x-5 sm:gap-y-6 lg:gap-10">
               {/* More Portfolio Item */}
-              <a href="#portfolio-3" className="block dc-more-portfolio-item-span">
+              <a href="#portfolio-3" className="block dc-more-portfolio-item">
                 <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
                 <div className="flex flex-col gap-y-1 py-3">
                   <h3 className="font-medium text-3xl">This is a title</h3>
@@ -103,7 +103,7 @@ function App() {
                 </div>
               </a>
               {/* More Portfolio Item */}
-              <a href="#portfolio-4" className="block dc-more-portfolio-item-span">
+              <a href="#portfolio-4" className="block dc-more-portfolio-item">
                 <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
                 <div className="flex flex-col gap-y-1 py-3">
                   <h3 className="font-medium text-3xl">This is a title</h3>
@@ -111,7 +111,7 @@ function App() {
                 </div>
               </a>
               {/* More Portfolio Item */}
-              <a href="#portfolio-5" className="block dc-more-portfolio-item-span">
+              <a href="#portfolio-5" className="block dc-more-portfolio-item">
                 <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
                 <div className="flex flex-col gap-y-1 py-3">
                   <h3 className="font-medium text-3xl">This is a title</h3>
@@ -119,7 +119,7 @@ function App() {
                 </div>
               </a>
               {/* More Portfolio Item */}
-              <a href="#portfolio-6" className="block dc-more-portfolio-item-span">
+              <a href="#portfolio-6" className="block dc-more-portfolio-item">
                 <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
                 <div className="flex flex-col gap-y-1 py-3">
                   <h3 className="font-medium text-3xl">This is a title</h3>
@@ -127,7 +127,7 @@ function App() {
                 </div>
               </a>
               {/* More Portfolio Item */}
-              <a href="#portfolio-7" className="hidden lg:block dc-more-portfolio-item-span">
+              <a href="#portfolio-7" className="hidden lg:block dc-more-portfolio-item">
                 <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
                 <div className="flex flex-col gap-y-1 py-3">
                   <h3 className="font-medium text-3xl">This is a title</h3>
@@ -135,7 +135,7 @@ function App() {
                 </div>
               </a>
               {/* More Portfolio Item */}
-              <a href="#portfolio-8" className="hidden lg:block dc-more-portfolio-item-span">
+              <a href="#portfolio-8" className="hidden lg:block dc-more-portfolio-item">
                 <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
                 <div className="flex flex-col gap-y-1 py-3">
                   <h3 className="font-medium text-3xl">This is a title</h3>
@@ -186,12 +186,12 @@ function App() {
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 md:order-3 lg:order-2 pt-1">
             <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Portfolio</p>
             <nav className="grid grid-cols-2 gap-x-1 sm:gap-x-5 lg:gap-x-10 gap-y-4 sm:gap-y-6 lg:gap-y-8 text-zinc-300 mt-4 sm:mt-5 lg:mt-8">
-              <a href="#portfolio" className="text-base sm:text-lg lg:text-xl">Website</a>
-              <a href="#portfolio" className="text-base sm:text-lg lg:text-xl">Website</a>
-              <a href="#portfolio" className="text-base sm:text-lg lg:text-xl">Website</a>
-              <a href="#portfolio" className="text-base sm:text-lg lg:text-xl">Website</a>
-              <a href="#portfolio" className="text-base sm:text-lg lg:text-xl">Website</a>
-              <a href="#portfolio" className="text-base sm:text-lg lg:text-xl">Website</a>
+              <a href="https://dc-darren.github.io/daddj/" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Daddj</a>
+              <a href="http://sledge-hammer-fuses.000webhostapp.com/" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Travelokie</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
             </nav>
           </div>
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 md:order-2 lg:order-3 pt-1">

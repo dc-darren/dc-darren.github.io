@@ -105,11 +105,12 @@
     hover:text-dc-black;
   }
 
-  .dc-more-portfolio-item-span {
+  .dc-more-portfolio-item {
     @apply
     col-span-12     /* Mobile 1 per row */
     sm:col-span-6   /* Tablet 2 per row */
-    lg:col-span-4;  /* Desktop 3 per row */
+    lg:col-span-4   /* Desktop 3 per row */
+    dc-transition;
   }
 }
 

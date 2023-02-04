@@ -574,6 +574,23 @@ body {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.dc-transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.dc-transition:hover {
+  --tw-translate-y: -0.125rem;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-shadow-color: #1E1E1E;
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .dc-header {
   font-family: Inter, Manrope, ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-weight: 800;
@@ -702,24 +719,37 @@ body {
   color: rgb(30 30 30 / var(--tw-text-opacity));
 }
 
-.dc-more-portfolio-item-span {
+.dc-more-portfolio-item {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.dc-more-portfolio-item:hover {
+  --tw-translate-y: -0.125rem;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-shadow-color: #1E1E1E;
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dc-more-portfolio-item {
   grid-column: span 12 / span 12;
 }
 
 @media (min-width: 640px) {
-  .dc-more-portfolio-item-span {
+  .dc-more-portfolio-item {
     grid-column: span 6 / span 6;
   }
 }
 
 @media (min-width: 1024px) {
-  .dc-more-portfolio-item-span {
+  .dc-more-portfolio-item {
     grid-column: span 4 / span 4;
   }
-}
-
-.dc-more-portfolio-item-span {
-  /* Desktop 3 per row */
 }
 
 .absolute {
@@ -794,10 +824,6 @@ body {
   width: 100%;
 }
 
-.w-15 {
-  width: 60px;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -858,10 +884,6 @@ body {
   gap: 1rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-x-10 {
   -webkit-column-gap: 2.5rem;
           column-gap: 2.5rem;
@@ -869,19 +891,6 @@ body {
 
 .gap-y-1 {
   row-gap: 0.25rem;
-}
-
-.gap-y-8 {
-  row-gap: 2rem;
-}
-
-.gap-x-5 {
-  -webkit-column-gap: 1.25rem;
-          column-gap: 1.25rem;
-}
-
-.gap-y-6 {
-  row-gap: 1.5rem;
 }
 
 .gap-x-1 {
@@ -1086,6 +1095,11 @@ body {
   color: rgb(17 52 72 / var(--tw-text-opacity));
 }
 
+.hover\:text-dc-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:col-span-6 {
     grid-column: span 6 / span 6;
@@ -1188,26 +1202,22 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:order-2 {
-    order: 2;
-  }
-
   .md\:order-3 {
     order: 3;
+  }
+
+  .md\:order-2 {
+    order: 2;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:order-3 {
-    order: 3;
-  }
-
-  .lg\:order-1 {
-    order: 1;
-  }
-
   .lg\:order-2 {
     order: 2;
+  }
+
+  .lg\:order-3 {
+    order: 3;
   }
 
   .lg\:col-span-5 {
