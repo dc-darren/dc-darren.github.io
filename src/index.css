@@ -50,49 +50,25 @@
     border-b-dc-black
     mt-2;
   }
-  
-  .btn-desktop,
-  .btn-tablet,
-  .btn-mobile {
+
+  .btn-dc {
     @apply
+    min-w-[140px]
+    sm:min-w-[160px]
+    lg:min-w-[180px]
     w-fit
+    h-[48px]
+    lg:h-[60px]
     flex
     justify-center
     items-center
     font-semibold
+    text-xs
+    sm:text-sm
+    lg:text-base
     rounded-full
     px-5
     dc-transition;
-  }
-
-  .btn-desktop {
-    min-width: 180px;
-    height: 60px;
-  }
-  
-  nav .btn-desktop {
-    min-width: 150px;
-    height: 50px;
-  }
-  
-  .btn-tablet {
-    min-width: 160px;
-    height: 48px;
-  }
-  
-  nav .btn-tablet {
-    min-width: 120px;
-    height: 40px;
-  }
-  
-  .btn-mobile {
-    min-width: 140px;
-    height: 48px;
-  }
-  
-  nav .btn-mobile {
-    min-width: 100px;
-    height: 40px;
   }
 
   .btn-dc-red {
@@ -102,7 +78,7 @@
     hover:bg-dc-white
     hover:text-dc-red;
   }
-  
+
   .btn-dc-red-outline {
     @apply
     border
@@ -111,7 +87,7 @@
     hover:bg-dc-red
     hover:text-dc-white;
   }
-  
+
   .btn-dc-white {
     @apply
     bg-dc-white
@@ -119,7 +95,7 @@
     hover:bg-dc-red
     hover:text-dc-white;
   }
-  
+
   .btn-dc-white-outline {
     @apply
     border
@@ -127,6 +103,13 @@
     text-dc-white
     hover:bg-dc-white
     hover:text-dc-black;
+  }
+
+  .dc-more-portfolio-item-span {
+    @apply
+    col-span-12     /* Mobile 1 per row */
+    sm:col-span-6   /* Tablet 2 per row */
+    lg:col-span-4;  /* Desktop 3 per row */
   }
 }
 
