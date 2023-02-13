@@ -1,4 +1,16 @@
 function App() {
+
+  const handleGetInTouch = () => {
+    const destinationEmail = "darren.denisson@gmail.com"
+    const emailSubject = "[dc-darren] - Add your subject"
+
+    var mailto = document.createElement("a")
+    var hrefString = `mailto:${destinationEmail}?`
+    hrefString += `subject=${emailSubject}`
+    mailto.href = hrefString
+    mailto.click()
+  }
+
   return (
     <>
       {/* Navbar */}
@@ -8,9 +20,9 @@ function App() {
           <ul className="hidden sm:flex items-center gap-10">
             <li><a href="#about" className="font-semibold text-sm lg:text-base">About</a></li>
             <li><a href="#portfolio" className="font-semibold text-sm lg:text-base">Portfolio</a></li>
-            <li><a href="#getInTouch" className="btn-dc btn-dc-red-outline">Get in Touch</a></li>
+            <li><button onClick={() => handleGetInTouch()} className="btn-dc btn-dc-red-outline">Get in Touch</button></li>
           </ul>
-          <button href="#" className="block sm:hidden text-base">&#9776;</button>
+          <button className="block sm:hidden text-base">&#9776;</button>
         </nav>
       </header>
       {/* End of Navbar */}
@@ -20,18 +32,19 @@ function App() {
         {/* About */}
         <section id="about" className="bg-dc-light-gray">
           <div className="dc-container dc-grid items-center gap-10 px-5 sm:px-10 lg:px-30 py-10 sm:py-16 lg:py-25">
-            <div className="col-span-12 lg:col-span-5 flex flex-col gap-1.5 sm:gap-2 lg:gap-3">
+            {/* <div className="col-span-12 lg:col-span-5 flex flex-col gap-1.5 sm:gap-2 lg:gap-3"> */}
+            <div className="col-span-12 lg:col-span-6 flex flex-col gap-1.5 sm:gap-2 lg:gap-3">
               <p className="dc-subheader text-lg lg:text-xl text-dc-red">Full-Stack Developer</p>
               <h2 className="dc-header text-4xl sm:text-5xl lg:text-6xl">Hi! I am Darren!</h2>
-              <p className="flex-shrink-0 basis-1/2 text-sm sm:text-base lg:text-xl text-dc-gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                A ornare tincidunt egestas adipiscing. Sed lacus aliquam sit amet sem.
-                Lacus ut ultricies nam enim. Ac aenean ut amet augue.
-                Nibh facilisi proin cursus porta tempor, non. Diam.
+              <p className="flex-shrink-0 basis-1/2 text-sm sm:text-base lg:text-lg text-dc-gray">
+                I enjoy building both front-end and back-end of websites.
+                With the knowledge obtained from working experiences, formal college education, and attending online courses,
+                I am able to deliver the final website product fulfilling the requirements of clients' needs.
               </p>
-              <a href="#getInTouch" className="btn-dc btn-dc-red mt-2">Get in Touch</a>
+              <button onClick={() => handleGetInTouch()} className="btn-dc btn-dc-red mt-2">Get in Touch</button>
             </div>
-            <img src="assets/images/sample-image.png" alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" />
+            {/* <img src="assets/images/sample-image.png" alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" /> */}
+            <img src="assets/images/waving-hand.png" alt="Waving Hand" className="hidden lg:block col-start-7 col-span-6 mx-auto" />
           </div>
         </section>
         {/* End of About */}
@@ -77,7 +90,7 @@ function App() {
               <p className="dc-subheader text-base sm:text-lg">Hotel Booking with Laravel</p>
               <h2 className="dc-header text-3xl sm:text-4xl lg:text-5xl">Travelokie</h2>
               <p className="direction-ltr flex-shrink-0 basis-1/2 text-sm sm:text-base">
-                Hotel booking system built with Laravel, which focuses on registration functionality of a hotel booking. Try out the simple way of booking a hotel in a few clicks.
+                Hotel booking system built with Laravel, which focuses on registration functionality of a hotel booking. Try out the simple way of booking a hotel within a few clicks.
               </p>
               <a href="http://sledge-hammer-fuses.000webhostapp.com/" target="_blank" rel="noreferrer" className="btn-dc btn-dc-white-outline hover:text-[#113448] mt-2">Open Travelokie</a>
             </div>
@@ -162,7 +175,7 @@ function App() {
             <div className="col-span-12 lg:col-start-8 lg:col-span-5 flex flex-col gap-1.5 sm:gap-2 lg:gap-3 px-5 sm:px-10 pt-5 sm:pt-10 pb-6 sm:pb-12 lg:p-0">
               <p className="dc-subheader text-lg lg:text-xl">This is a subheader</p>
               <h2 className="dc-header text-4xl sm:text-5xl lg:text-6xl">This is a header</h2>
-              <p className="flex-shrink-0 basis-1/2 text-sm sm:text-base lg:text-xl text-dc-white">
+              <p className="flex-shrink-0 basis-1/2 text-sm sm:text-base lg:text-lg text-dc-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 A ornare tincidunt egestas adipiscing. Sed lacus aliquam sit amet sem.
                 Lacus ut ultricies nam enim. Ac aenean ut amet augue.
@@ -186,12 +199,12 @@ function App() {
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 md:order-3 lg:order-2 pt-1">
             <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Portfolio</p>
             <nav className="grid grid-cols-2 gap-x-1 sm:gap-x-5 lg:gap-x-10 gap-y-4 sm:gap-y-6 lg:gap-y-8 text-zinc-300 mt-4 sm:mt-5 lg:mt-8">
-              <a href="https://dc-darren.github.io/daddj/" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Daddj</a>
-              <a href="http://sledge-hammer-fuses.000webhostapp.com/" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Travelokie</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="https://dc-darren.github.io/daddj/" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Daddj</a>
+              <a href="http://sledge-hammer-fuses.000webhostapp.com/" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Travelokie</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
             </nav>
           </div>
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 md:order-2 lg:order-3 pt-1">
