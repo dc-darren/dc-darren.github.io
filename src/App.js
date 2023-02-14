@@ -1,4 +1,8 @@
+import MorePortfolioItem from "./component/MorePortfolioItem"
+
 function App() {
+
+  const imgAsset = (path) => "assets/images/" + path
 
   const handleGetInTouch = () => {
     const destinationEmail = "darren.denisson@gmail.com"
@@ -52,8 +56,8 @@ function App() {
         {/* Portfolio Header */}
         <section id="portfolio" className="bg-dc-white">
           <div className="dc-container flex flex-col justify-between items-center gap-1 py-10 sm:py-16 lg:py-25">
-            <p className="dc-subheader text-xl text-dc-red">This is a subheader</p>
-            <h2 className="dc-header text-3xl lg:text-4xl">This is a header</h2>
+            <p className="dc-subheader text-xl text-dc-red">Portfolio</p>
+            <h2 className="dc-header text-3xl lg:text-4xl">Projects Showcase</h2>
             <div className="dc-separator"></div>
           </div>
         </section>
@@ -102,59 +106,14 @@ function App() {
         <section id="more-portfolio" className="bg-dc-light-gray">
           <div className="dc-container flex flex-col gap-5 sm:gap-10 lg:gap-15 px-5 sm:px-10 lg:px-30 py-10 sm:py-16 lg:py-25">
             <div className="flex flex-col justify-between items-center gap-1">
-              <p className="dc-subheader text-xl text-dc-red">This is a subheader</p>
-              <h2 className="dc-header text-3xl lg:text-4xl">This is a header</h2>
+              <p className="dc-subheader text-xl text-dc-red">More Portfolio</p>
+              <h2 className="dc-header text-3xl lg:text-4xl">Even More Projects</h2>
               <div className="dc-separator"></div>
             </div>
             <div className="dc-grid gap-4 sm:gap-x-5 sm:gap-y-6 lg:gap-10">
-              {/* More Portfolio Item */}
-              <a href="#portfolio-3" className="block dc-more-portfolio-item">
-                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
-                <div className="flex flex-col gap-y-1 py-3">
-                  <h3 className="font-medium text-3xl">This is a title</h3>
-                  <p className="text-dc-gray">This is a subtitle</p>
-                </div>
-              </a>
-              {/* More Portfolio Item */}
-              <a href="#portfolio-4" className="block dc-more-portfolio-item">
-                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
-                <div className="flex flex-col gap-y-1 py-3">
-                  <h3 className="font-medium text-3xl">This is a title</h3>
-                  <p className="text-dc-gray">This is a subtitle</p>
-                </div>
-              </a>
-              {/* More Portfolio Item */}
-              <a href="#portfolio-5" className="block dc-more-portfolio-item">
-                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
-                <div className="flex flex-col gap-y-1 py-3">
-                  <h3 className="font-medium text-3xl">This is a title</h3>
-                  <p className="text-dc-gray">This is a subtitle</p>
-                </div>
-              </a>
-              {/* More Portfolio Item */}
-              <a href="#portfolio-6" className="block dc-more-portfolio-item">
-                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
-                <div className="flex flex-col gap-y-1 py-3">
-                  <h3 className="font-medium text-3xl">This is a title</h3>
-                  <p className="text-dc-gray">This is a subtitle</p>
-                </div>
-              </a>
-              {/* More Portfolio Item */}
-              <a href="#portfolio-7" className="hidden lg:block dc-more-portfolio-item">
-                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
-                <div className="flex flex-col gap-y-1 py-3">
-                  <h3 className="font-medium text-3xl">This is a title</h3>
-                  <p className="text-dc-gray">This is a subtitle</p>
-                </div>
-              </a>
-              {/* More Portfolio Item */}
-              <a href="#portfolio-8" className="hidden lg:block dc-more-portfolio-item">
-                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2]" />
-                <div className="flex flex-col gap-y-1 py-3">
-                  <h3 className="font-medium text-3xl">This is a title</h3>
-                  <p className="text-dc-gray">This is a subtitle</p>
-                </div>
-              </a>
+              <MorePortfolioItem link="#" imgSrc={imgAsset("sample-image.png")} imgAlt="More Portfolio Item" title="This is a title" subtitle="This is a subtitle" />
+              <MorePortfolioItem link="#" imgSrc={imgAsset("sample-image.png")} imgAlt="More Portfolio Item" title="This is a title" subtitle="This is a subtitle" />
+              <MorePortfolioItem link="#" imgSrc={imgAsset("sample-image.png")} imgAlt="More Portfolio Item" title="This is a title" subtitle="This is a subtitle" />
             </div>
           </div>
         </section>
