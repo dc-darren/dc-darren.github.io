@@ -43,7 +43,7 @@ function App() {
       <main>
         {/* About */}
         <section id="about" className="bg-dc-light-gray">
-          <div className="dc-container dc-grid items-center gap-10 px-5 sm:px-10 lg:px-30 py-10 sm:py-16 lg:py-25">
+          <div className="dc-container dc-grid items-center lg:gap-10 px-5 sm:px-10 lg:px-30 py-10 sm:py-16 lg:py-25">
             {/* <div className="col-span-12 lg:col-span-5 flex flex-col gap-1.5 sm:gap-2 lg:gap-3"> */}
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-1.5 sm:gap-2 lg:gap-3">
               <p className="dc-subheader text-lg lg:text-xl text-dc-red">Full-Stack Developer</p>
@@ -63,7 +63,7 @@ function App() {
 
         {/* Portfolio Header */}
         <section id="portfolio" className="bg-dc-white">
-          <div className="dc-container flex flex-col justify-between items-center gap-1 py-10 sm:py-16 lg:py-25">
+          <div className="dc-container flex flex-col justify-between items-center gap-y-1 text-center py-10 sm:py-16 lg:py-25">
             <p className="dc-subheader text-xl text-dc-red">Portfolio</p>
             <h2 className="dc-header text-3xl lg:text-4xl">Projects Showcase</h2>
             <div className="dc-separator"></div>
@@ -75,7 +75,7 @@ function App() {
 
         {/* Portfolio Image Left */}
         <section id="portfolio-1" className="bg-[#7A6657]">
-          <div className="dc-container dc-grid items-center gap-x-10 lg:px-30">
+          <div className="dc-container dc-grid items-center lg:gap-x-10 lg:px-30">
             {/* Image width 50% of screen = (col 1 till col 7) + (gap/2) */}
             {/* With grid applied, image width is also added with margin which is 120px */}
             <img src="assets/images/daddj-poster.png" alt="Daddj Poster" className="col-span-12 lg:col-start-1 lg:col-end-7 lg:min-w-[calc(100%__+_(2.5rem/2)+_120px)] h-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[4/3] object-left object-cover shadow-xl shadow-dc-black/10 lg:-ml-30" />
@@ -94,7 +94,7 @@ function App() {
         {/* Portfolio Image Right */}
         <section id="portfolio-2" className="bg-[#113448]">
           {/* Grid reversed for image right */}
-          <div className="dc-container dc-grid lg:direction-rtl justify-end items-center gap-x-10 lg:px-30">
+          <div className="dc-container dc-grid lg:direction-rtl justify-end items-center lg:gap-x-10 lg:px-30">
             {/* Image width 50% of screen = (col 1 till col 7) + (gap/2) */}
             {/* With grid applied, image width is also added with margin which is 120px */}
             <img src="assets/images/travelokie-poster.png" alt="Travelokie Poster" className="col-span-12 lg:col-start-1 lg:col-end-7 lg:min-w-[calc(100%__+_(2.5rem/2)+_120px)] h-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[4/3] object-left object-cover shadow-xl shadow-dc-black/10 lg:-mr-30" />
@@ -112,8 +112,8 @@ function App() {
 
         {/* More Portfolio */}
         <section id="more-portfolio" className="bg-dc-light-gray">
-          <div className="dc-container flex flex-col gap-5 sm:gap-10 lg:gap-15 px-5 sm:px-10 lg:px-30 py-10 sm:py-16 lg:py-25">
-            <div className="flex flex-col justify-between items-center gap-1">
+          <div className="dc-container flex flex-col gap-y-5 sm:gap-y-10 lg:gap-y-15 px-5 sm:px-10 lg:px-30 py-10 sm:py-16 lg:py-25">
+            <div className="flex flex-col justify-between items-center gap-y-1 text-center">
               <p className="dc-subheader text-xl text-dc-red">More Portfolio</p>
               <h2 className="dc-header text-3xl lg:text-4xl">Even More Projects</h2>
               <div className="dc-separator"></div>
