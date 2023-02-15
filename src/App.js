@@ -1,6 +1,9 @@
+import { useEffect, useState } from "react"
 import MorePortfolioItem from "./component/MorePortfolioItem"
 
 function App() {
+
+  const [projectCount, setProjectCount] = useState(0)
 
   const imgAsset = (path) => "assets/images/" + path
 
@@ -14,6 +17,11 @@ function App() {
     mailto.href = hrefString
     mailto.click()
   }
+
+  useEffect(() => {
+    setProjectCount(2)
+  }, [])
+  
 
   return (
     <>
@@ -121,30 +129,30 @@ function App() {
 
         {/* End of Portfolio */}
 
-        {/* Emphasis */}
-        <section id="emphasis" className="bg-dc-red text-dc-white">
+        {/* Inquiries */}
+        <section id="inquiries" className="bg-dc-red text-dc-white">
           <div className="dc-container dc-grid items-center lg:gap-10 p-0 lg:px-30 lg:py-25">
             <div className="relative col-span-12 lg:col-span-6">
                 <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[15/11]" />
                 <div className="absolute w-full h-full flex flex-col justify-center items-center font-inter text-dc-black top-0 left-0">
-                    <p className="font-extrabold text-7xl sm:text-9xl">01</p>
-                    <p className="font-extrabold text-5xl sm:text-7xl mt-3 sm:mt-8">A text here</p>
+                    <p className="font-extrabold text-7xl sm:text-9xl">{String(projectCount).padStart(2, '0')}</p>
+                    <p className="font-extrabold text-5xl sm:text-7xl mt-3">Projects</p>
+                    <p className="font-medium mt-3">(and still counting...!)</p>
                 </div>
             </div>
             <div className="col-span-12 lg:col-start-8 lg:col-span-5 flex flex-col gap-1.5 sm:gap-2 lg:gap-3 px-5 sm:px-10 pt-5 sm:pt-10 pb-6 sm:pb-12 lg:p-0">
-              <p className="dc-subheader text-lg lg:text-xl">This is a subheader</p>
-              <h2 className="dc-header text-4xl sm:text-5xl lg:text-6xl">This is a header</h2>
+              <p className="dc-subheader text-lg lg:text-xl">Inquiries</p>
+              <h2 className="dc-header text-4xl sm:text-5xl lg:text-6xl">Get in Touch</h2>
               <p className="flex-shrink-0 basis-1/2 text-sm sm:text-base lg:text-lg text-dc-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                A ornare tincidunt egestas adipiscing. Sed lacus aliquam sit amet sem.
-                Lacus ut ultricies nam enim. Ac aenean ut amet augue.
-                Nibh facilisi proin cursus porta tempor, non. Diam.
+                Built {projectCount} projects so far and still on the run!
+                Interested in getting your own website built like these?
+                Don't hesitate to contact me for business inquiries through this button.
               </p>
-              <a href="#getInTouch" className="btn-dc btn-dc-white mt-2">Button</a>
+              <button onClick={() => handleGetInTouch()} className="btn-dc btn-dc-white mt-2">Get in Touch</button>
             </div>
           </div>
         </section>
-        {/* End of Emphasis */}
+        {/* End of Inquiries */}
       </main>
       {/* End of Body */}
 
