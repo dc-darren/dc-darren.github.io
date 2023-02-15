@@ -7,19 +7,14 @@ function App() {
 
   const imgAsset = (path) => "assets/images/" + path
 
-  const handleGetInTouch = () => {
-    const destinationEmail = "darren.denisson@gmail.com"
-    const emailSubject = "[dc-darren] - Add your subject"
+  const destinationEmail = "darren.denisson@gmail.com"
+  const emailSubject = "[dc-darren] - Add your subject"
 
-    var mailto = document.createElement("a")
-    var hrefString = `mailto:${destinationEmail}?`
-    hrefString += `subject=${emailSubject}`
-    mailto.href = hrefString
-    mailto.click()
-  }
+  var emailHrefString = `mailto:${destinationEmail}?`
+  emailHrefString += `subject=${emailSubject}`
 
   useEffect(() => {
-    setProjectCount(2)
+    setProjectCount(5)
   }, [])
   
 
@@ -32,7 +27,7 @@ function App() {
           <ul className="hidden sm:flex items-center gap-10">
             <li><a href="#about" className="font-semibold text-sm lg:text-base">About</a></li>
             <li><a href="#portfolio" className="font-semibold text-sm lg:text-base">Portfolio</a></li>
-            <li><button onClick={() => handleGetInTouch()} className="btn-dc btn-dc-red-outline">Get in Touch</button></li>
+            <li><a href={emailHrefString} className="btn-dc btn-dc-red-outline">Get in Touch</a></li>
           </ul>
           <button className="block sm:hidden text-base">&#9776;</button>
         </nav>
@@ -53,7 +48,7 @@ function App() {
                 With the knowledge obtained from working experiences, formal college education, and attending online courses,
                 I am able to deliver the final website product fulfilling the requirements of clients' needs.
               </p>
-              <button onClick={() => handleGetInTouch()} className="btn-dc btn-dc-red mt-2">Get in Touch</button>
+              <a href={emailHrefString} className="btn-dc btn-dc-red mt-2">Get in Touch</a>
             </div>
             {/* <img src="assets/images/sample-image.png" alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" /> */}
             <img src="assets/images/waving-hand.png" alt="Waving Hand" className="hidden lg:block col-start-7 col-span-6 mx-auto" />
@@ -63,7 +58,7 @@ function App() {
 
         {/* Portfolio Header */}
         <section id="portfolio" className="bg-dc-white">
-          <div className="dc-container flex flex-col justify-between items-center gap-y-1 text-center py-10 sm:py-16 lg:py-25">
+          <div className="dc-container flex flex-col justify-between items-center gap-y-1 text-center px-5 py-10 sm:py-16 lg:py-25">
             <p className="dc-subheader text-xl text-dc-red">Portfolio</p>
             <h2 className="dc-header text-3xl lg:text-4xl">Projects Showcase</h2>
             <div className="dc-separator"></div>
@@ -148,7 +143,7 @@ function App() {
                 Interested in getting your own website built like these?
                 Don't hesitate to contact me for business inquiries through this button.
               </p>
-              <button onClick={() => handleGetInTouch()} className="btn-dc btn-dc-white mt-2">Get in Touch</button>
+              <a href={emailHrefString} className="btn-dc btn-dc-white mt-2">Get in Touch</a>
             </div>
           </div>
         </section>
@@ -163,7 +158,7 @@ function App() {
             <a href="/" className="font-bold text-2xl sm:text-3xl lg:text-4xl">dc-darren</a>
             <p className="text-base sm:text-lg lg:text-xl text-zinc-300 mt-4 sm:mt-5 lg:mt-8">Made with ❤️</p>
           </div>
-          <div className="col-span-12 sm:col-span-6 lg:col-span-4 md:order-3 lg:order-2 pt-1">
+          <div className="col-span-12 sm:col-span-6 lg:col-span-4 sm:order-3 lg:order-2 pt-1">
             <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Portfolio</p>
             <nav className="grid grid-cols-2 gap-x-1 sm:gap-x-5 lg:gap-x-10 gap-y-4 sm:gap-y-6 lg:gap-y-8 text-zinc-300 mt-4 sm:mt-5 lg:mt-8">
               <a href="https://dc-darren.github.io/daddj/" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Daddj</a>
@@ -171,20 +166,19 @@ function App() {
               <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
               <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
               <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
             </nav>
           </div>
-          <div className="col-span-12 sm:col-span-6 lg:col-span-4 md:order-2 lg:order-3 pt-1">
-            <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Contacts</p>
+          <div className="col-span-12 sm:col-span-6 lg:col-span-4 sm:order-2 lg:order-3 pt-1">
+            <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Channels</p>
             <nav className="flex flex-wrap gap-5 lg:gap-6 mt-4 sm:mt-5 lg:mt-8">
-              <a href="#contact">
-                <img src="assets/images/sample-image.png" alt="Contact" className="w-12 lg:w-15" />
+              <a href={emailHrefString} className="dc-transition">
+                <img src="assets/images/email-light.png" alt="Email" className="w-12 lg:w-15" />
               </a>
-              <a href="#contact">
-                <img src="assets/images/sample-image.png" alt="Contact" className="w-12 lg:w-15" />
+              <a href="https://github.com/dc-darren" className="dc-transition">
+                <img src="assets/images/github-light.svg" alt="GitHub" className="w-12 lg:w-15" />
               </a>
-              <a href="#contact">
-                <img src="assets/images/sample-image.png" alt="Contact" className="w-12 lg:w-15" />
+              <a href="https://www.linkedin.com/in/darren-denisson/" className="dc-transition">
+                <img src="assets/images/linkedin-light.png" alt="LinkedIn" className="w-12 lg:w-15" />
               </a>
             </nav>
           </div>
