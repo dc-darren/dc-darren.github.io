@@ -50,8 +50,10 @@ function App() {
               </p>
               <a href={emailHrefString} className="btn-dc btn-dc-red mt-2">Get in Touch</a>
             </div>
-            {/* <img src="assets/images/sample-image.png" alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" /> */}
-            <img src="assets/images/waving-hand.png" alt="Waving Hand" className="hidden lg:block col-start-7 col-span-6 mx-auto" />
+            {/* <img  src={imgAsset("sample-image.png")} alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" /> */}
+            <div className="hidden lg:block col-start-7 col-span-6 mx-auto">
+              <img src={imgAsset("waving-hand.svg")} alt="Waving Hand" className="h-[300px]" />
+            </div>
           </div>
         </section>
         {/* End of About */}
@@ -73,7 +75,7 @@ function App() {
           <div className="dc-container dc-grid items-center lg:gap-x-10 lg:px-30">
             {/* Image width 50% of screen = (col 1 till col 7) + (gap/2) */}
             {/* With grid applied, image width is also added with margin which is 120px */}
-            <img src="assets/images/daddj-poster.png" alt="Daddj Poster" className="col-span-12 lg:col-start-1 lg:col-end-7 lg:min-w-[calc(100%__+_(2.5rem/2)+_120px)] h-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[4/3] object-left object-cover shadow-xl shadow-dc-black/10 lg:-ml-30" />
+            <img  src={imgAsset("daddj-poster.png")} alt="Daddj Poster" className="col-span-12 lg:col-start-1 lg:col-end-7 lg:min-w-[calc(100%__+_(2.5rem/2)+_120px)] h-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[4/3] object-left object-cover shadow-xl shadow-dc-black/10 lg:-ml-30" />
             <div className="col-span-12 lg:col-start-8 lg:col-span-5 flex flex-col gap-1.5 sm:gap-2 lg:gap-3 text-dc-white px-5 sm:px-10 pt-5 sm:pt-10 pb-6 sm:pb-12 lg:p-0">
               <p className="dc-subheader text-base sm:text-lg">API Fetching with React</p>
               <h2 className="dc-header text-3xl sm:text-4xl lg:text-5xl">Daddj</h2>
@@ -92,7 +94,7 @@ function App() {
           <div className="dc-container dc-grid lg:direction-rtl justify-end items-center lg:gap-x-10 lg:px-30">
             {/* Image width 50% of screen = (col 1 till col 7) + (gap/2) */}
             {/* With grid applied, image width is also added with margin which is 120px */}
-            <img src="assets/images/travelokie-poster.png" alt="Travelokie Poster" className="col-span-12 lg:col-start-1 lg:col-end-7 lg:min-w-[calc(100%__+_(2.5rem/2)+_120px)] h-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[4/3] object-left object-cover shadow-xl shadow-dc-black/10 lg:-mr-30" />
+            <img  src={imgAsset("travelokie-poster.png")} alt="Travelokie Poster" className="col-span-12 lg:col-start-1 lg:col-end-7 lg:min-w-[calc(100%__+_(2.5rem/2)+_120px)] h-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[4/3] object-left object-cover shadow-xl shadow-dc-black/10 lg:-mr-30" />
             <div className="col-span-12 lg:col-start-8 lg:col-span-5 flex flex-col lg:items-end gap-1.5 sm:gap-2 lg:gap-3 text-left text-dc-white px-5 sm:px-10 pt-5 sm:pt-10 pb-6 sm:pb-12 lg:p-0">
               <p className="dc-subheader text-base sm:text-lg">Hotel Booking with Laravel</p>
               <h2 className="dc-header text-3xl sm:text-4xl lg:text-5xl">Travelokie</h2>
@@ -128,7 +130,7 @@ function App() {
         <section id="inquiries" className="bg-dc-red text-dc-white">
           <div className="dc-container dc-grid items-center lg:gap-10 p-0 lg:px-30 lg:py-25">
             <div className="relative col-span-12 lg:col-span-6">
-                <img src="assets/images/sample-image.png" alt="Avatar" className="w-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[15/11]" />
+                <img src={imgAsset("sample-image.png")} alt="Avatar" className="w-full aspect-[3/2] sm:aspect-[8/5] lg:aspect-[15/11]" />
                 <div className="absolute w-full h-full flex flex-col justify-center items-center font-inter text-dc-black top-0 left-0">
                     <p className="font-extrabold text-7xl sm:text-9xl">{String(projectCount).padStart(2, '0')}</p>
                     <p className="font-extrabold text-5xl sm:text-7xl mt-3">Projects</p>
@@ -170,15 +172,15 @@ function App() {
           </div>
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 sm:order-2 lg:order-3 pt-1">
             <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Channels</p>
-            <nav className="flex flex-wrap gap-5 lg:gap-6 mt-4 sm:mt-5 lg:mt-8">
-              <a href={emailHrefString} className="dc-transition">
-                <img src="assets/images/email-light.png" alt="Email" className="w-12 lg:w-15" />
+            <nav className="flex flex-wrap gap-5 lg:gap-6 text-zinc-300 mt-4 sm:mt-5 lg:mt-8">
+              <a href={emailHrefString} className="hover:text-dc-white dc-transition">
+                <img  src={imgAsset("email-light.svg")} alt="Email" className="w-12 lg:w-15" />
               </a>
-              <a href="https://github.com/dc-darren" className="dc-transition">
-                <img src="assets/images/github-light.svg" alt="GitHub" className="w-12 lg:w-15" />
+              <a href="https://github.com/dc-darren" className="hover:text-dc-white dc-transition">
+                <img  src={imgAsset("github-light.svg")} alt="GitHub" className="w-12 lg:w-15" />
               </a>
-              <a href="https://www.linkedin.com/in/darren-denisson/" className="dc-transition">
-                <img src="assets/images/linkedin-light.png" alt="LinkedIn" className="w-12 lg:w-15" />
+              <a href="https://www.linkedin.com/in/darren-denisson/" className="hover:text-dc-white dc-transition">
+                <img  src={imgAsset("linkedin-light.svg")} alt="LinkedIn" className="w-12 lg:w-15" />
               </a>
             </nav>
           </div>
