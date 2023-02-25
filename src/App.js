@@ -51,8 +51,12 @@ function App() {
               <a href={emailHrefString} className="btn-dc btn-dc-red mt-2">Get in Touch</a>
             </div>
             {/* <img  src={imgAsset("sample-image.png")} alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" /> */}
-            <div className="hidden lg:block col-start-7 col-span-6 mx-auto">
-              <img src={imgAsset("waving-hand.svg")} alt="Waving Hand" className="h-[300px]" />
+            <div className="hidden lg:block relative col-start-7 col-span-6 w-full h-full mx-auto">
+              <div className="absolute max-w-[300px] w-full h-[300px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="relative h-full">
+                  <img src={imgAsset("waving-hand.svg")} alt="Waving Hand" className="absolute animate-dc-handwave" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
