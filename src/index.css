@@ -25,7 +25,7 @@
     grid-cols-12;
   }
 
-  .dc-transition {
+  .dc-hover-effect {
     @apply
     transition-all
     duration-500
@@ -72,7 +72,7 @@
     lg:text-base
     rounded-full
     px-5
-    dc-transition;
+    dc-hover-effect;
   }
 
   .btn-dc-red {
@@ -114,7 +114,7 @@
     col-span-12     /* Mobile 1 per row */
     sm:col-span-6   /* Tablet 2 per row */
     lg:col-span-4   /* Desktop 3 per row */
-    dc-transition;
+    dc-hover-effect;
   }
 }
 

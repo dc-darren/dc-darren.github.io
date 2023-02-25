@@ -163,23 +163,23 @@ function App() {
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 sm:order-3 lg:order-2 pt-1">
             <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Portfolio</p>
             <nav className="grid grid-cols-2 gap-x-1 sm:gap-x-5 lg:gap-x-10 gap-y-4 sm:gap-y-6 lg:gap-y-8 text-zinc-300 mt-4 sm:mt-5 lg:mt-8">
-              <a href="https://dc-darren.github.io/daddj/" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Daddj</a>
-              <a href="http://sledge-hammer-fuses.000webhostapp.com/" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Travelokie</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
-              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-transition">Website</a>
+              <a href="https://dc-darren.github.io/daddj/" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-hover-effect">Daddj</a>
+              <a href="http://sledge-hammer-fuses.000webhostapp.com/" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-hover-effect">Travelokie</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-hover-effect">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-hover-effect">Website</a>
+              <a href="#portfolio" target="_blank" rel="noreferrer" className="w-fit text-base sm:text-lg lg:text-xl hover:text-dc-white dc-hover-effect">Website</a>
             </nav>
           </div>
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 sm:order-2 lg:order-3 pt-1">
             <p className="font-semibold text-lg sm:text-xl lg:text-2xl">Channels</p>
             <nav className="flex flex-wrap gap-5 lg:gap-6 text-zinc-300 mt-4 sm:mt-5 lg:mt-8">
-              <a href={emailHrefString} className="hover:text-dc-white dc-transition">
+              <a href={emailHrefString} className="hover:text-dc-white dc-hover-effect">
                 <img  src={imgAsset("email-light.svg")} alt="Email" className="w-12 lg:w-15" />
               </a>
-              <a href="https://github.com/dc-darren" className="hover:text-dc-white dc-transition">
+              <a href="https://github.com/dc-darren" className="hover:text-dc-white dc-hover-effect">
                 <img  src={imgAsset("github-light.svg")} alt="GitHub" className="w-12 lg:w-15" />
               </a>
-              <a href="https://www.linkedin.com/in/darren-denisson/" className="hover:text-dc-white dc-transition">
+              <a href="https://www.linkedin.com/in/darren-denisson/" className="hover:text-dc-white dc-hover-effect">
                 <img  src={imgAsset("linkedin-light.svg")} alt="LinkedIn" className="w-12 lg:w-15" />
               </a>
             </nav>
