@@ -1,17 +1,23 @@
 import { useEffect, useState } from "react"
 import MorePortfolioItem from "./component/MorePortfolioItem"
 
-function App() {
-
-  const [projectCount, setProjectCount] = useState(0)
-
-  const imgAsset = (path) => "assets/images/" + path
+const InitData = () => {
+  const imagesAssetsPath = "assets/images/"
 
   const destinationEmail = "darren.denisson@gmail.com"
   const emailSubject = "[dc-darren] - Add your subject"
+  return {imagesAssetsPath, destinationEmail, emailSubject}
+}
 
-  var emailHrefString = `mailto:${destinationEmail}?`
-  emailHrefString += `subject=${emailSubject}`
+function App() {
+  const data = InitData()
+
+  const [projectCount, setProjectCount] = useState(0)
+
+  const imgAsset = (path) => data.imagesAssetsPath + path
+
+  var emailHrefString = `mailto:${data.destinationEmail}?`
+  emailHrefString += `subject=${data.emailSubject}`
 
   useEffect(() => {
     setProjectCount(5)
@@ -50,7 +56,7 @@ function App() {
               </p>
               <a href={emailHrefString} className="btn-dc btn-dc-red mt-2">Get in Touch</a>
             </div>
-            {/* <img  src={imgAsset("sample-image.png")} alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" /> */}
+            {/* <img src={imgAsset("sample-image.png")} alt="Avatar" className="hidden lg:block col-start-7 col-span-6 w-full aspect-[15/11]" /> */}
             <div className="hidden lg:block relative col-start-7 col-span-6 w-full h-full mx-auto">
               <div className="absolute max-w-[300px] w-full h-[300px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div className="relative h-full">
